@@ -140,7 +140,7 @@ The max number of pods that is created within a single polling period. If there 
 ```yaml
   rollout:
     strategy: gradual                         # Optional. Default: default. Which Rollout Strategy KEDA will use.
-    propagationPolicy: foreground             # Optional. Default: background. Kubernetes propagation policy for cleaning up existing jobs during 
+    propagationPolicy: foreground             # Optional. Default: background. Kubernetes propagation policy for cleaning up existing jobs during rollout.
 ```
 
 The optional property rollout.strategy specifies the rollout strategy KEDA will use while updating an existing ScaledJob.
